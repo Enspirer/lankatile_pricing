@@ -6,3 +6,9 @@ Breadcrumbs::for('admin.dashboard', function ($trail) {
 
 require __DIR__.'/auth.php';
 require __DIR__.'/log-viewer.php';
+
+
+
+Breadcrumbs::for('admin.price.index', function ($trail) {
+    $trail->push('Price', route('admin.price.index'));
+});
