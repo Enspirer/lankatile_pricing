@@ -7,7 +7,7 @@
     <form action="{{route('frontend.price.search')}}" method="post" enctype="multipart/form-data">
     {{csrf_field()}}
 
-        <input type="text" class="form-control" name="code" placeholder="Enter Tile Code Here" required>
+        <input type="text" class="form-control" style="margin-top:100px" name="code" placeholder="Enter Tile Code Here" required>
 
         <div class="mt-5 text-center">
             <button type="submit" class="btn rounded-pill text-light px-4 py-2 ms-2 btn-success">Check Now</button>
