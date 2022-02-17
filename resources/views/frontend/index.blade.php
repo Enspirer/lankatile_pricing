@@ -27,7 +27,7 @@
             @else
             <div class="product-not-found">
                 <i class="bi bi-x-circle-fill"></i>
-                <div class="alert">Incorrect Tile Code</div>
+                <div class="alert" style="font-size: 23px;color: #FF0000;margin-bottom: 0px;font-weight: 600">Incorrect Tile Code</div>
             </div>
             @endif
         @endif
