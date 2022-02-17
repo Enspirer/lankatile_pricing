@@ -7,5 +7,5 @@
         </a>
     </div>
     <div class="hero-image">
-        <img src="{{url('img/background.png')}}" alt="hero-image">
+        <div  style="background-image: url('{{url('img/background.png')}}');height: 600px;background-position: center;background-repeat: no-repeat;background-size: cover;" alt="hero-image">
     </div>

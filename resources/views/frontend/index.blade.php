@@ -10,7 +10,7 @@
         <form action="{{route('frontend.price.search')}}" method="post" enctype="multipart/form-data">
         {{csrf_field()}}
             <div class="price-checker">
-                <div class="title">Check are product prices (MRP)</div>
+                <div class="title">Check our product prices (MRP)</div>
                 <input type="text" name="code" id="code" placeholder="Enter Tile Code" required>
                 <h5 class="mb-4" style="color:#909090; font-size:17px;">Ex: FAEANW-M079A66</h5>
                 <button type="submit" class="btn-check">Check Now</button>
