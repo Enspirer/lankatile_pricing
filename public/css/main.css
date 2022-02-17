@@ -90,7 +90,7 @@
 }
 
 .nav-bar a {
-  font-size: 17px;
+  font-size: 15px;
   color: #333333;
   text-decoration: none;
   text-transform: uppercase;
@@ -198,13 +198,13 @@
 }
 
 .body .results-block .product-not-found .bi {
-  font-size: 85px;
+  font-size: 66px;
   color: #f00;
   margin-bottom: 10px;
 }
 
 .body .results-block .product-not-found .alert {
-  font-size: 34px;
+  font-size: 26px;
   font-weight: 300;
   color: #f00;
   margin-bottom: 10px;

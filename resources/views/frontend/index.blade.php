@@ -11,8 +11,8 @@
         {{csrf_field()}}
             <div class="price-checker">
                 <div class="title">Check our product prices (MRP)</div>
-                <input type="text" name="code" id="code" placeholder="Enter Tile Code" required>
-                <h5 class="mb-4" style="color:#909090; font-size:17px;">Ex: FAEANW-M079A66</h5>
+                <input type="text" name="code" id="code" placeholder="Enter Tile Code"   oninput="this.value = this.value.toUpperCase()" required>
+                <h5 class="mb-4" style="color:#909090; font-size:17px;">Example: FAEANW-M079A66</h5>
                 <button type="submit" class="btn-check">Check Now</button>
             </div>
         </form>
@@ -27,8 +27,7 @@
             @else
             <div class="product-not-found">
                 <i class="bi bi-x-circle-fill"></i>
-                <div class="alert">Product you are looking for is not found</div>
-                <div class="message">Please enter Tile Code</div>
+                <div class="alert">Incorrect Tile Code</div>
             </div>
             @endif
         @endif
