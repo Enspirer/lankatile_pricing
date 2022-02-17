@@ -90,7 +90,7 @@
 }
 
 .nav-bar a {
-  font-size: 17px;
+  font-size: 15px;
   color: #333333;
   text-decoration: none;
   text-transform: uppercase;
@@ -183,13 +183,14 @@
 }
 
 .body .results-block .product-found .alert {
-  font-size: 30px;
+  font-size: 23px;
   color: #FF0000;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
+  font-weight: 600;
 }
 
 .body .results-block .product-found .price {
-  font-size: 54px;
+  font-size: 47px;
   font-weight: 700;
 }
 
@@ -198,14 +199,14 @@
 }
 
 .body .results-block .product-not-found .bi {
-  font-size: 45px;
+  font-size: 66px;
   color: #f00;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 .body .results-block .product-not-found .alert {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 26px;
+  font-weight: 300;
   color: #f00;
   margin-bottom: 10px;
 }
