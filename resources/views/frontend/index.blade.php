@@ -4,24 +4,34 @@
 
 @section('content')
     
-    <form action="{{route('frontend.price.search')}}" method="post" enctype="multipart/form-data">
-    {{csrf_field()}}
+@include('frontend.includes.nav')
 
-        <input type="text" class="form-control" style="margin-top:100px; text-transform:uppercase" name="code" placeholder="Enter Tile Code Here" required>
+    <div class="body">
+        <form action="{{route('frontend.price.search')}}" method="post" enctype="multipart/form-data">
+        {{csrf_field()}}
+            <div class="price-checker">
+                <div class="title">Check are product prices (MRP)</div>
+                <input type="text" name="tilecode" id="tilecode" placeholder="Enter Tile Code" required>
+                <button type="submit" class="btn-check">Check Now</button>
+            </div>
+        </form>
 
-        <div class="mt-5 text-center">
-            <button type="submit" class="btn rounded-pill text-light px-4 py-2 ms-2 btn-success">Check Now</button>
-        </div>
-
-    </form>
-
-        @if($price != null)
+        <div class="results-block">
+            @if($price != null)
             @if($price != 'Not Available')
-                <h2>LKR {{$price->mr_price_decimal}}</h2>    
+            <div class="product-found">
+                <div class="alert">Maximum Retail Price</div>
+                <div class="price">LKR {{$price->mr_price_decimal}}</div>
+            </div>
             @else
-                <h2>Not Available</h2>   
-
+            <div class="product-not-found">
+                <i class="bi bi-x-circle-fill"></i>
+                <div class="alert">Product you are looking for is not found</div>
+                <div class="message">Please enter Tile Code</div>
+            </div>
             @endif
         @endif
+        </div>
+    </div>
 
 @endsection

@@ -12,9 +12,12 @@
         <meta name="description" content="@yield('meta_description', 'Laravel Boilerplate')">
         <meta name="author" content="@yield('meta_author', 'Anthony Rappa')">
         @yield('meta')
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
         {{-- See https://laravel.com/docs/5.5/blade#stacks for usage --}}
         @stack('before-styles')
+        <link rel="stylesheet" href="{{url('css/main.css')}}">
+
 
         <!-- Check if the language is set to RTL, so apply the RTL layouts -->
         <!-- Otherwise apply the normal LTR layouts -->
@@ -27,9 +30,8 @@
 
         <div id="app">
             @include('includes.partials.logged-in-as')
-            <!-- @include('frontend.includes.nav') -->
 
-            <div class="container">
+            <div class="">
                 @include('includes.partials.messages')
                 @yield('content')
             </div><!-- container -->
