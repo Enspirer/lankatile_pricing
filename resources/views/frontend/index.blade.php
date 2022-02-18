@@ -31,8 +31,6 @@
             @if($price != null)
             @if($price != 'Not Available')
             <div class="product-found">
-
-                <
                 <div class="alert" style="margin-bottom: unset;padding-bottom: 0px;">Maximum Retail Price (MRP)</div>
                 <div class="price">LKR {{$price->mr_price_decimal}}</div>
             </div>

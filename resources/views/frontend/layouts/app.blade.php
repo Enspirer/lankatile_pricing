@@ -18,6 +18,7 @@
         @stack('before-styles')
         <link rel="stylesheet" href="{{url('css/main.css')}}">
 
+        <link rel="icon" sizes="192x192" href="https://www.lankatiles.com/images/lankatile.png">
 
         <!-- Check if the language is set to RTL, so apply the RTL layouts -->
         <!-- Otherwise apply the normal LTR layouts -->
