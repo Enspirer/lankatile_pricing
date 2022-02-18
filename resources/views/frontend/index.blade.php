@@ -34,7 +34,7 @@
             @if($price != 'Not Available')
             <div class="product-found">
                 <h2 style="font-size: 22px;margin-bottom: 0px;">FAEANW-M079A66</h2>
-                <div class="alert" style="margin-bottom: unset;padding-bottom: 0px;padding-top: 0px;">Maximum Retail Price (MRP)</div>
+                <div class="alert" style="margin-bottom: unset;padding-bottom: 0px;padding-top: 0px;">Maximum Retail Price (MRP) Per Piece</div>
                 <div class="price">LKR {{$price->mr_price_decimal}}</div>
             </div>
             @else
