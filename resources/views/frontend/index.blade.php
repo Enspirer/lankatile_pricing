@@ -12,9 +12,6 @@
             <div class="price-checker">
                 <div class="title">Check our product prices (MRP)</div>
                 <input type="text" name="code" id="code" placeholder="Enter Tile Code" oninput="this.value = this.value.toUpperCase()" required>
-                <h5 class="mb-4" style="color: rgb(144, 144, 144);font-size: 15px;padding-top: 8px;">Example: FAEANW-M079A66</h5>
-                <button type="submit" class="btn-check">Check Now</button>
-
                 @if($price != 'Not Available')
 
                 @else
@@ -23,6 +20,11 @@
                         <div class="col-md-10" style="font-size: 20px;color: rgb(255, 0, 0);margin-bottom: 0px;font-weight: 600;text-align: left;padding-left: 10px;padding-top: 15px;">Incorrect Tile Code</div>
                     </div>
                 @endif
+
+                <h5 class="mb-4" style="color: rgb(144, 144, 144);font-size: 15px;padding-top: 8px;">Example: FAEANW-M079A66</h5>
+                <button type="submit" class="btn-check">Check Now</button>
+
+
 
             </div>
         </form>
