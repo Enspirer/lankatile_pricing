@@ -270,6 +270,10 @@
         margin: 0 auto;
     }
 
+    .hero-image div {
+        height: 100px !important;
+    }
+
     .nav-bar a {
         font-size: 12px;
     }
@@ -305,6 +309,10 @@
 
     .body .price-checker .col-2 .bi {
         font-size: 30px;
+    }
+
+    .body .price-checker .row .col-10 {
+        font-size: 16px !important;
     }
 
 
