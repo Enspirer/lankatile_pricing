@@ -21,7 +21,7 @@
                     </div>
                 @endif
 
-                <h5 class="mb-4" style="color: rgb(144, 144, 144);font-size: 15px;padding-top: 8px;">Example: FAEANW-M079A66</h5>
+                <h5 class="mb-3" style="color: rgb(144, 144, 144);font-size: 15px;padding-top: 8px;">Example: FAEANW-M079A66</h5>
                 <button type="submit" class="btn-check">Check Now</button>
 
 
@@ -33,7 +33,7 @@
             @if($price != null)
             @if($price != 'Not Available')
             <div class="product-found">
-                <h2 style="font-size: 22px;margin-bottom: 0px;">FAEANW-M079A66</h2>
+                <h2 style="font-size: 22px;margin-bottom: 0px;">{{$price->product_code}}</h2>
                 <div class="alert" style="margin-bottom: unset;padding-bottom: 0px;padding-top: 0px;">Maximum Retail Price (MRP) Per Piece</div>
                 <div class="price">LKR {{$price->mr_price_decimal}}</div>
             </div>
