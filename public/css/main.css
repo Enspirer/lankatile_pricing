@@ -1,222 +1,112 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #productCheckPopup {
-  max-width: 500px;
-  width: 100%;
-  border: 1px solid #707070;
-  border-radius: 3px;
-  padding: 25px 40px;
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid #707070;
+    border-radius: 3px;
+    padding: 25px 40px;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
 }
 
 #productCheckPopup .content-block .bi {
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  font-size: 25px;
-  color: #707070;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 25px;
+    color: #707070;
 }
 
 #productCheckPopup .content-block .bi:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 #productCheckPopup .content-block .title {
-  font-size: 29px;
-  text-transform: uppercase;
-  line-height: 1;
-  margin-bottom: 30px;
-  position: relative;
+    font-size: 29px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 #productCheckPopup .content-block .title::after {
-  content: '';
-  width: 72px;
-  height: 4px;
-  background-color: #ED1B24;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, 10px);
-  transform: translate(-50%, 10px);
+    content: '';
+    width: 72px;
+    height: 4px;
+    background-color: #ED1B24;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 10px);
+    transform: translate(-50%, 10px);
 }
 
 #productCheckPopup .content-block .content {
-  font-size: 14px;
-  margin-bottom: 25px;
-  text-align: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 #productCheckPopup .content-block .check-now-btn {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: #000;
-  font-size: 14px;
-  width: 170px;
-  height: 34px;
-  line-height: 31px;
-  border: 1px solid #707070;
-  margin: 0 auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    width: 170px;
+    height: 34px;
+    line-height: 31px;
+    border: 1px solid #707070;
+    margin: 0 auto;
 }
 
 .nav-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 85px;
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-  padding: 0 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 85px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+    padding: 0 50px;
 }
 
 .nav-bar a {
-  font-size: 15px;
-  color: #333333;
-  text-decoration: none;
-  text-transform: uppercase;
+    font-size: 15px;
+    color: #333333;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-bar a:hover {
+    color: #333333;
+    text-decoration: none;
 }
 
 .hero-image img {
-  width: 100%;
+    width: 100%;
 }
 
 .body .price-checker {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 50px 0;
-}
-
-.body .price-checker .title {
-  font-size: 24px;
-  text-transform: uppercase;
-  margin-bottom: 50px;
-  position: relative;
-}
-
-.body .price-checker .title::after {
-  content: '';
-  width: 130px;
-  height: 4px;
-  background-color: #ED1B24;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, 10px);
-  transform: translate(-50%, 10px);
-}
-
-.body .price-checker input {
-  max-width: 560px;
-  width: 100%;
-  height: 47px;
-  font-size: 19px;
-  text-align: center;
-  color: #707070;
-  border: none;
-  -webkit-box-shadow: 0 0 10px 1px #e4e7eb;
-  box-shadow: 0 0 10px 1px #e4e7eb;
-  margin-bottom: 10px;
-}
-
-.body .price-checker input:focus-visible {
-  outline: none;
-}
-
-.body .price-checker .btn-check {
-  display: block;
-  width: 310px;
-  height: 44px;
-  line-height: 45px;
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  border:none;
-  font-size: 16px;
-}
-
-.body .results-block {
-  background-color: #F8F8F8;
-  padding: 30px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.body .results-block .product-found {
-  text-align: center;
-}
-
-.body .results-block .product-found .alert {
-  font-size: 23px;
-  color: #FF0000;
-  margin-bottom: 0px;
-  font-weight: 600;
-}
-
-.body .results-block .product-found .price {
-  font-size: 37px;
-  font-weight: 700;
-}
-
-.body .results-block .product-not-found {
-  text-align: center;
-}
-
-.body .results-block .product-not-found .bi {
-  font-size: 66px;
-  color: #f00;
-  margin-bottom: 10px;
-}
-
-.body .results-block .product-not-found .alert {
-  font-size: 26px;
-  font-weight: 300;
-  color: #f00;
-  margin-bottom: 10px;
-}
-
-.body .results-block .product-not-found .message {
-  font-size: 24px;
-}
-
-@media screen and (max-width: 767px) {
-  .nav-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -227,40 +117,197 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: auto;
-    padding: 30px 0 10px;
-  }
-  .nav-bar a {
-    margin-bottom: 20px;
-  }
-  .body {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .body .price-checker {
-    text-align: center;
-  }
-  .body .price-checker .title {
-    font-size: 30px;
-  }
-  .body .price-checker input {
-    width: 100%;
-    height: 70px;
-  }
-  .body .results-block .product-found .alert {
-    font-size: 25px;
-  }
-  .body .results-block .product-found .price {
-    font-size: 40px;
-  }
-  .body .results-block .product-not-found .bi {
-    font-size: 60px;
-  }
-  .body .results-block .product-not-found .alert {
-    font-size: 25px;
-  }
-  .body .results-block .product-not-found .message {
-    font-size: 18px;
-  }
+    padding: 50px 0;
 }
+
+.body .price-checker .title {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.body .price-checker .title::after {
+    content: '';
+    width: 130px;
+    height: 4px;
+    background-color: #ED1B24;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 10px);
+    transform: translate(-50%, 10px);
+}
+
+.body .price-checker input {
+    max-width: 560px;
+    width: 100%;
+    height: 47px;
+    font-size: 19px;
+    text-align: center;
+    color: #707070;
+    border: none;
+    -webkit-box-shadow: 0 0 10px 1px #e4e7eb;
+    box-shadow: 0 0 10px 1px #e4e7eb;
+    margin-bottom: 10px;
+}
+
+.body .price-checker input:focus-visible {
+    outline: none;
+}
+
+.body .price-checker .btn-check {
+    display: block;
+    width: 310px;
+    height: 44px;
+    line-height: 45px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+}
+
+.body .results-block {
+    background-color: #F8F8F8;
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.body .results-block .product-found {
+    text-align: center;
+}
+
+.body .results-block .product-found .alert {
+    font-size: 23px;
+    color: #FF0000;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.body .results-block .product-found .price {
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.body .results-block .product-not-found {
+    text-align: center;
+}
+
+.body .results-block .product-not-found .bi {
+    font-size: 66px;
+    color: #f00;
+    margin-bottom: 10px;
+}
+
+.body .results-block .product-not-found .alert {
+    font-size: 26px;
+    font-weight: 300;
+    color: #f00;
+    margin-bottom: 10px;
+}
+
+.body .results-block .product-not-found .message {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .body {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .body .price-checker {
+        text-align: center;
+    }
+
+    .body .price-checker .title {
+        font-size: 24px;
+    }
+
+    .body .price-checker input {
+        width: 100%;
+        height: 70px;
+    }
+
+    .body .results-block .product-found .alert {
+        font-size: 18px;
+    }
+
+    .body .results-block .product-found .price {
+        font-size: 36px;
+    }
+
+    .body .results-block .product-not-found .bi {
+        font-size: 60px;
+    }
+
+    .body .results-block .product-not-found .alert {
+        font-size: 18px;
+    }
+
+    .body .results-block .product-not-found .message {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .nav-bar {
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .nav-bar a {
+        font-size: 12px;
+    }
+
+    .nav-bar a img {
+        width: 150px;
+    }
+
+    .body .price-checker .title {
+        font-size: 14px;
+    }
+
+    .body .price-checker input {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .body .price-checker .btn-check {
+        width: 80%;
+    }
+
+    .body .results-block .product-found .alert {
+        font-size: 18px;
+    }
+
+    .body .results-block .product-found .price {
+        font-size: 28px;
+    }
+
+    .body .price-checker .col-2 {
+        margin: 0 !important;
+    }
+
+    .body .price-checker .col-2 .bi {
+        font-size: 30px;
+    }
+
+
+}
+
 /*# sourceMappingURL=main.css.map */

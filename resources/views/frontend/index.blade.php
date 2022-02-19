@@ -16,8 +16,8 @@
 
                 @else
                     <div class="row" style="height: 70px;">
-                        <div class="col-md-2" style="font-size: 35px;color: rgb(255, 0, 24);padding-top: 5px;text-align: left;margin-bottom: 20px;"><i class="bi bi-x-circle-fill"></i></div>
-                        <div class="col-md-10" style="font-size: 20px;color: rgb(255, 0, 0);margin-bottom: 0px;font-weight: 600;text-align: left;padding-left: 10px;padding-top: 15px;">Incorrect Tile Code</div>
+                        <div class="col-2" style="font-size: 35px;color: rgb(255, 0, 24);padding-top: 5px;text-align: left;margin-bottom: 20px;"><i class="bi bi-x-circle-fill"></i></div>
+                        <div class="col-10" style="font-size: 20px;color: rgb(255, 0, 0);margin-bottom: 0px;font-weight: 600;text-align: left;padding-left: 10px;padding-top: 15px;">Incorrect Tile Code</div>
                     </div>
                 @endif
 
